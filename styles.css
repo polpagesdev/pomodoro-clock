@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #6F1D1B;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  min-height: 650px;
+  border-radius: 16px;
+  border-radius: 26px;
+  background: linear-gradient(145deg, #832120, #631918);
+  box-shadow: 5px 5px 10px #5C1816, -5px -5px 10px #8D2422;
+}
+
+#container h4 {
+  color: #6F1D1B;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  color: #f3e5f5;
+}
+
+#timer-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f3e5f5;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #832120, #631918);
+  box-shadow: 5px 5px 9px #5C1816, -5px -5px 9px #8D2422;
+}
+
+#break-label, #session-label {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#break, #session {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 30px;
+  font-weight: 600;
+  align-items: center;
+}
+
+#time-left {
+  font-size: 90px;
+  font-weight: 700;
+}
+
+#start_stop {
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(-145deg, #832120, #631918);
+  box-shadow: 6px 6px 11px #5C1816, -6px -6px 11px #8D2422;
+  margin-right: 10px;
+}
+
+#reset {
+  font-size: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: linear-gradient(-145deg, #832120, #631918);
+  box-shadow: 6px 6px 11px #5C1816, -6px -6px 11px #8D2422;
+  margin-left: 10px;
+}
+
+#break-increment, #break-decrement, #session-increment, #session-decrement {
+  cursor: pointer;
+}
+
+#title {
+  margin: 40px;
+  min-width: 85%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255, 0.25);
+}
